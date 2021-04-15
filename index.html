@@ -17,27 +17,41 @@ function myFunction() {
 <style>
 
 body {
-    font-family: Garamond, serif;
+    font-family:'Courier New', Courier, monospace;
 	 color:indigo;
-	letter-spacing: 2px;
+	letter-spacing:0px;
     font-size: 24px;
     margin-top: 0px;
-    background-color: rgb(2, 2, 2);
- 
-    background-size:fill;
-background-attachment: fixed;
+    background-color:rgb(240, 230, 220);
+    text-shadow: 2px 2px 5px white;
+    background-size:contain;
+background-attachment: scroll;
 	background-repeat:no-repeat;
+    text-align:center;
+  
 }
 
+
+a {
+    text-decoration:none;
+    color: transparent;
+}
+
+a:hover {
+    text-shadow: 2px 2px 5px crimson;
+    color: transparent;
+}
+
+
 	p {
-   color:rgb(0, 0, 0);
-   font-family:serif;
+   color:rgb(204, 7, 7);
+   font-family: Arial, Helvetica, sans-serif;
    text-align:center;
 padding: 40px;
-
+text-shadow: 2px 2px 5px indigo;
    font-size: 22px;
-  letter-spacing: 6px;
-  text-decoration: italic;
+  letter-spacing: 0px;
+
 }
 
 .center {
@@ -69,6 +83,297 @@ padding: 40px;
 .text {
     padding: 20px;
     }
+
+
+
+
+
+    .flier {
+	pointer-events:none;
+}
+
+.flier > * {
+
+        animation: fly 30s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	15% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	15.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	40% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	40.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	65% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(270deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+
+.flier2 {
+	pointer-events:none;
+}
+
+.flier2 > * {
+
+        animation: fly2 60s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999997;
+    
+}
+
+
+
+@keyframes fly2 {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-100%) translateY(100vh) rotateZ(0deg)
+	}
+
+	14% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(100deg)
+	}
+
+	14.001%, 30% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	50% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-100deg)
+	}
+
+	50.001%, 55% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-100deg)
+	}
+
+	57% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(100deg)
+	}
+
+	95% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+
+
+
+
+.flier3 {
+	pointer-events:none;
+}
+
+.flier3 > * {
+
+        animation: fly2 40s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(7);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999998;
+    
+}
+
+
+
+@keyframes fly3 {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(100%) translateY(-100vh) rotateZ(200deg)
+	}
+
+	14% {
+		transform: translateX(-100vw) translateY(100%) rotateZ(100deg)
+	}
+
+	14.001%, 30% {
+		transform: translateX(-100vw) translateY(30%) rotateZ(0deg)
+	}
+
+	50% {
+		transform: translateX(200%) translateY(-3vh) rotateZ(-100deg)
+	}
+
+	50.001%, 55% {
+		transform: translateX(200%) translateY(100%) rotateZ(-100deg)
+	}
+
+	57% {
+		transform: translateX(-100vw) translateY(-50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(-20vw) translateY(200%) rotateZ(100deg)
+	}
+
+	95% {
+		transform: translateX(-10vw) translateY(-100vh) rotateZ(0deg)
+	}
+}
+
+
+.flier4 {
+	pointer-events:none;
+}
+
+.flier4 > * {
+
+        animation: fly2 50s linear infinite;
+        pointer-events: none !important;
+	top: 3;
+	left: 7;
+	transform: translateX(120%) translateY(120%) rotateZ(3);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999998;
+    
+}
+
+
+
+@keyframes fly4 {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(100%) translateY(100vh) rotateZ(0deg)
+	}
+
+	14% {
+		transform: translateX(-100vw) translateY(-100%) rotateZ(100deg)
+	}
+
+	14.001%, 45% {
+		transform: translateX(-100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	50% {
+		transform: translateX(200%) translateY(3vh) rotateZ(-100deg)
+	}
+
+	50.001%, 55% {
+		transform: translateX(200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	57% {
+		transform: translateX(-100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(-20vw) translateY(-200%) rotateZ(360deg)
+	}
+
+	80% {
+		transform: translateX(-10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+
+
+.flier5 {
+	pointer-events:none;
+}
+
+.flier5 > * {
+
+        animation: fly2 70s linear infinite;
+        pointer-events: none !important;
+	top: 3;
+	left: 7;
+	transform: translateX(-120%) translateY(-120%) rotateZ(-3);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999998;
+    
+}
+
+
+
+@keyframes fly5 {
+
+	95.001%, 0% {
+                display: block;
+		transform: translateX(100%) translateY(100vh) rotateZ(180deg)
+	}
+
+	10% {
+		transform: translateX(-100vw) translateY(-100%) rotateZ(100deg)
+	}
+
+	10.001%, 45% {
+		transform: translateX(-100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	50% {
+		transform: translateX(200%) translateY(3vh) rotateZ(-100deg)
+	}
+
+	50.001%, 55% {
+		transform: translateX(200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	57% {
+		transform: translateX(-100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	65.001%, 68% {
+		transform: translateX(-20vw) translateY(-200%) rotateZ(360deg)
+	}
+
+	80% {
+		transform: translateX(-10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+
+
+
+
 
 
 
@@ -137,8 +442,19 @@ padding: 40px;
   height: 45px;
   position:fixed;
   background-color: rgb(7, 8, 8);
-}   
+}
 
+
+
+.blinking{
+    animation:blinkingText 4s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    30%{    color: rgb(240, 230, 220); }
+    100%{     color: #000;    }
+    
+}
 
 
 </style>
@@ -148,17 +464,29 @@ padding: 40px;
 <body>
 
 
-    <div class="center">
-        <img src= "manifesto posters-02.png" style="width:100%;height:auto;"  class="center">
-        <img src= "manifesto posters-03.png" style="width:100%;height:auto;"  class="center">
-       
-      </div>  
     
+
+
+        <div class="flier"> <img src= "anagram.png" style="width:20%;height:auto;"> </div>
+        <div class="flier2"> <img src= "thewallflotaltext.png" style="width:20%;height:auto;"> </div>
+        <div class="flier3"> <img src= "block1.png" style="width:5%;height:auto;"> </div>
+        <div class="flier4"> <img src= "block2.png" style="width:6%;height:auto;"> </div>
+        <div class="flier5"> <img src= "block3.png" style="width:4%;height:auto;"> </div>   
+    
+
+
+        <div class="img"> <br><br>
+          <img src= "manifesto posters-03.png" style="width:50%;height:auto;" class="center" ></div>  <br><br>
+
+          
+        
+       
+      
+    <br><br><br>
 	
-  
+    <span class="center"> <a href = "mailto:theroom@thewallpublication.com"><span class="blinking"> Submit Here</span></a></span>
 
-
-
+    <br><br><br><br>
 
 </body>
 
